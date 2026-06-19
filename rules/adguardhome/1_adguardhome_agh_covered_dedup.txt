@@ -28,6 +28,7 @@
 @@||wpscdn.cn^$important
 @@||wpscdn.com^$important
 @@||xhscdn.com^$important
+@@||hdslb.com^$important
 
 ! ---------- [2] Broad PCDN keyword blocking ----------
 ||*pcdn*^
