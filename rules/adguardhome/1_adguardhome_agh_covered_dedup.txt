@@ -1,0 +1,116 @@
+! ============================================================
+! AdGuard Home PCDN Filter Rules
+! Normalized for AdGuard Home DNS filtering syntax
+! Source: 1_dedup_against_pcdn_clean.txt
+! Generated: 2026-06-19
+! ============================================================
+
+! ---------- [1] Allowlist / exception rules ----------
+@@||g.live.com^$important
+@@||ipcdn.apple.com^$important
+@@||mask.apple-dns.net^$important
+@@||deepseek.com^$important
+@@||mask.icloud.com^$important
+@@||s.click.taobao.com^$important
+@@||ipassport.ele.me^$important
+@@||jd.com^$important
+@@||360buyimg*^$important
+@@||meituan.net^$important
+@@||gtimg.com^$important
+@@||qpic.cn^$important
+@@||qlogo.cn^$important
+@@||qq.com^$important
+@@||pstatp.com^$important
+@@||snssdk.com^$important
+@@||bdstatic.com^$important
+@@||ksyuncdn.com^$important
+@@||xiaohongshu.com^$important
+@@||wpscdn.cn^$important
+@@||wpscdn.com^$important
+@@||xhscdn.com^$important
+
+! ---------- [2] Broad PCDN keyword blocking ----------
+||*pcdn*^
+||*mcdn*^
+||*hcdn*^
+||*ppio*^
+||*onething*^
+||*pkoplink*^
+||*p2cdn*^
+||*p2ptun*^
+||*xycdn*^
+||*xycloud*^
+||*xyp2p*^
+||*kuiniuca*^
+||*yfcloud*^
+||*yfp2p*^
+||*yfcdn*^
+||*szbdyd*^
+||*uhabo*^
+||*v-p2p*^
+||*m-p2p*^
+||*peercdn*^
+||*cdnbye*^
+||*nexusedgeio*^
+||*tianwenca*^
+||*mountaintoys*^
+||*bsccdn*^
+
+! ---------- [3] Platform-specific P2P / PCDN blocking ----------
+||tpstelemetry.tencent.com^
+||bvc.bilivideo.com^
+||push-rtmp-l1.ixigua.com^
+||p2p-v.byteoversea.com^
+||*volcvideo*^
+||*lf3-p2p*^
+||*p2p-snssdk*^
+
+! ---------- [4] Protocol, log, GSLB and STUN blocking ----------
+||*p2pupdate*^
+||*p2pupgrade*^
+||*p2perrorlog*^
+||*p2plog*^
+||*p2p-log*^
+||*p2pchunk*^
+||*p2plive*^
+||*cdnnodedns*^
+||*p2p*gslb*^
+||*stun*^
+
+! ---------- [5] DNS-level ad / tracking domains ----------
+||t7z.cupid.ptqy.gitv.tv^$important
+
+! ---------- [6] User-requested additional keyword blocking ----------
+||*71edge*^
+||*7niu*^
+||*cachecdn*^
+||*d.kugou*^
+||*doubleclick*^
+||*dyp2p*^
+||*gjfzpt*^
+||*ietheivaicai*^
+||*isure*^
+||*jcloud*^
+||*jdcloud*^
+||*jomodns*^
+||*ks-p2p*^
+||*kspkg*^
+||*kwaizt*^
+||*meta-cdn*^
+||*miaozhen*^
+||*ncdn*^
+||*p-cdn*^
+||*pdata*^
+||*pscdn*^
+||*qiniu*^
+||*qtp2p*^
+||*saxysec*^
+||*sdk1xyajs*^
+||*umeng*^
+||*u-p2p*^
+||*upyun*^
+||*vweixinthunder*^
+||*wsglw*^
+||*xinqiucc*^
+||*xlive*^
+||*xxpkg*^
